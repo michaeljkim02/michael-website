@@ -1,4 +1,22 @@
 /*Navbar*/
+.navbar{
+    position: fixed; /* Set the navbar to fixed position */
+    width: 100%; /* Full width */
+    background-color: none;
+    z-index: 1000;
+    justify-content: center;
+}
+.nav-link{
+    color: black;
+}
+
+/*For Text*/
+.text{
+    font-size: 2.5ex;
+}
+h3{
+    color: #00CCCC;
+}
 
 /*Header*/
 header{
@@ -30,9 +48,31 @@ header .social li a {
 header .social li a:hover { 
     color: #00CCCC; 
 }
+header .banner-text{
+    padding-top: 20%;
+}
 
 /*About Section*/
-#about{
+#about-section{
     background-color: black;
+    color: white;
+    text-align: center;
+    height: 650px;
+    min-height: 600px;
+}
+section h3{
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+section #about img{
+    height: 400px;
+    width: 270px;
+}
+
+/*Resume Section*/
+#resume-section{
+    text-align: center;
+}
+section #resume button{
     color: white;
 }
