@@ -1,54 +1,44 @@
-/*Navbar*/
-.navbar{
-    position: fixed; /* Set the navbar to fixed position */
-    width: 100%; /* Full width */
-    background-color: none;
-    z-index: 1000;
-    justify-content: center;
-}
-.nav-link{
-    color: black;
-}
-
 /*For Text*/
+.font{
+    font-family: 'Roboto', sans-serif;
+}
 .text{
     font-size: 2.5ex;
 }
 h3{
     color: #00CCCC;
 }
+.bolded { 
+    font-weight: bold;
+}
+
+/*Navbar*/
+.navbar{
+    position: fixed; 
+    width: 100%;
+    z-index: 1000;
+    justify-content: center;
+    background-color: black;
+}
+.nav-link{
+    color: white;
+}
 
 /*Header*/
 header{
     position: relative;
     text-align: center;
-    background-image: url("img/");
-    justify-content: center;
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, .8);
-    background-color: grey;
-    height: 800px;
-    min-height: 500px;
+    background-image: url("img/home_section.jpg");
+    background-position: center;
+    background-size: cover !important;
+    background-repeat: none;
+    text-shadow: 1px 1px 2px black;
+    height: 900px;
+    min-height: 600px;
     width: 100%;
     overflow: hidden;
 }
-header .social {
-    margin: 24px 0;
-    padding: 0;
-    font-size: 35px;
-}
-header .social li{
-    list-style: none;
-    display: inline-block;
-    margin: 0 15px;
-    padding: 0;
-}
-header .social li a { 
-    color: #fff; 
-}
-header .social li a:hover { 
-    color: #00CCCC; 
-}
-header .banner-text{
+header .home{
     padding-top: 20%;
 }
 
@@ -67,6 +57,7 @@ section h3{
 section #about img{
     height: 400px;
     width: 270px;
+    padding-bottom: 1%;
 }
 
 /*Resume Section*/
@@ -76,3 +67,39 @@ section #about img{
 section #resume button{
     color: white;
 }
+
+#resume-section li{
+    list-style: none;
+    margin: 0 15px;
+    padding-top: 2px;
+}
+
+#class-list{
+    display: flex;
+    flex-direction: column;
+}
+
+#learned{
+    padding-top: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+/*Contact*/
+/* header .social {
+    margin: 24px 0;
+    padding: 0;
+    font-size: 35px;
+}
+header .social li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+    padding: 0;
+}
+header .social li a { 
+    color: #fff; 
+}
+header .social li a:hover { 
+    color: #00CCCC; 
+} */

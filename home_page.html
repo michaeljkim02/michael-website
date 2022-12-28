@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
         <!--Personal CSS-->
         <link rel="stylesheet" href="home_page.css">
 
@@ -15,40 +16,34 @@
     <body>
         <!--Navbar-->
         <nav class="navbar navbar-expand-lg" >
-            <div class = "container-fluid">
+            <div class = "container-fluid" >
                 <div class="collapse navbar-collapse justify-content-center" id="navbarList">    
                     <div class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <a class="nav-link" href="home_page.php">HOME</a>
+                            <a class="nav-link" href="home_page.php" class = ""><span  class = "font">HOME</span></a>
                     </div>
                     <div class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <a class="nav-link" href="">ABOUT</a>
+                            <a class="nav-link" href=""><span  class = "font">ABOUT</span></a>
                     </div>
                     <div class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <a class="nav-link" href="">RESUME</a>
+                            <a class="nav-link" href=""><span  class = "font">RESUME</span></a>
                     </div>
                     <div class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <a class="nav-link" href="">PROJECTS</a>
+                            <a class="nav-link" href=""><span  class = "font">PROJECTS</span></a>
                     </div>
                     <div class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <a class="nav-link" href="">ACTIVITIES</a>
+                            <a class="nav-link" href=""><span  class = "font">ACTIVITIES</span></a>
                     </div>
                     <div class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <a class="nav-link" href="">CONTACT</a>
+                        <a class="nav-link" href=""><span  class = "font">CONTACT</span></a>
                     </div>
                 </div>
             </div>
         </nav>
 
         <!--Home Section-->
-        <header id="home">
-            <div class="banner-text">
-                <h1>Michael Kim</h1>
-                <!--LinkedIn Button-->
-                <ul class="social" class="d-flex p-2">
-                    <li><a href="https://github.com/michaeljkim02" target="_blank"><i class="fa fa-github" style="font-size: 65dp;"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/michaeljkim02/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="mailto:michaeljkim02@gmail.com"><i class="fa fa-envelope"></i></a></li>
-                </ul>
+        <header id="home-section">
+            <div class="home">
+                <h1 >Michael Kim</h1>
             </div>
         </header>
 
@@ -56,10 +51,10 @@
         <section id = "about-section">
             <h3>About Myself</h3>
 
-            <div id = "about">
+            <div id = "about" class = "font">
+                <img src = "img/profile.jpeg" alt = "profile picture">
                 <p class = "text">I am a current junior at the University of Southern California where I am pursuing a B.S. in Computer Science. </p>
                 <p class = "text">I am seeking a career in Cyber Security or Software Engineering and am currently seeking an internship.</p>
-                <img src = "img/profile.jpeg" alt = "profile picture">
             </div>
 
         </section>
@@ -68,23 +63,48 @@
         <section id = "resume-section">
             <h3>Resume</h3>
 
-            <div id = "resume">
-                <p class = "text">Take a look at my full resume using the button below or feel free to just read through!</p>
+            <div id = "resume" class = "font">
+                <p class = "text">Feel free to look at my resume or look through my skills below!</p>
                 <a class="btn btn-primary" href="___" role="button">Resume Link</a>
+
             </div>
 
-            <div id = "skills">
-                <h4>Skills</h4>
-                <ul>
-                    <li>C++: Intermediate</li>
-                    <li>Java: Intermediate</li>
-                    <li>HTML and CSS: Intermediate</li>
-                    <li>C++: Intermediate</li>
-                </ul>
+            <div id ="learned">
+                <div id = "classes">
+                    <h4>Relevant Coursework</h4>
+                    <ul class = "font" id = "class-list">
+                        <li><span class="bolded">CSCI 103</span>: Introduction to Programming</li>
+                        <li><span class="bolded">CSCI 104</span>: Data Structures and Object Oriented Design</li>
+                        <li><span class="bolded">CSCI 170</span>: Discrete Methods in Computer Science</li>
+                        <li><span class="bolded">CSCI 201</span>: Principles of Software Development</li>
+                        <li><span class="bolded">CSCI 270</span>: Introductions to Algorithms and Theory of Computing</li>
+                        <li><span class="bolded">CSCI 310</span>: Software Engineering</li>
+                        <li><span class="bolded">CSCI 356</span>: Introductions to Computer Systems</li>
+                        <li><span class="bolded">ITP 303</span>: Full-Stack Web Development</li>
+                        <li><span class="bolded">ITP 466</span>: Building the High Tech Startup</li>
+                    </ul>
+                </div>
+
+                <div id = "skills">
+                    <h4>Skills</h4>
+                    <ul class = "font">
+                        <li><span class="bolded">C++</span>: Intermediate</li>
+                        <li><span class="bolded">Java</span>: Intermediate</li>
+                        <li><span class="bolded">HTML and CSS</span>: Intermediate</li>
+                    </ul>
+                </div>
             </div>
-            
+
             
         </section>
+
+        <!--For Contacts-->
+        <ul class="social" class="d-flex p-2">
+            <li><a href="https://github.com/michaeljkim02" target="_blank"><i class="fa fa-github" style="font-size: 65dp;"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/michaeljkim02/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="mailto:michaeljkim02@gmail.com"><i class="fa fa-envelope"></i></a></li>
+        </ul>
+        
         
     </body>
 </html> 
