@@ -60,7 +60,7 @@ header .home{
 #about{
     padding-top: 2%;
     padding-bottom: 2%;
-    font-size: 1.3em;
+    font-size: 1em;
     margin-left:8%;
     margin-right:8%;
 }
@@ -69,7 +69,7 @@ header .home{
     color: white;
     text-align: center;
     height: 800px;
-    min-height: 750px;
+    min-height: 700px;
 }
 section h2{
     padding-bottom: 2%;
